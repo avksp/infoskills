@@ -1,0 +1,80 @@
+<script id="userInformationTmpl" type="text/html">
+  <!-- version 2.0 -->
+  <div class="logged-in">
+    <div class="user-menu">
+        <div data-target="profile" class="profile-menu">
+          <ul class="user-menu-list">
+			<!-- ko if: showProfile -->
+            <li class="user-menu__item"><a href="javascript:void(0);" data-bind="click: ClickProfile" class="user-menu__profile"><p data-bind="text: login" class="user-menu__name"></p></a></li>
+            <li class="user-menu__item"><a href="javascript:void(0);" data-target="purchases" class="user-menu__purchases dropdown__trigger">Мои покупки</a>
+            
+				<div id="purchases_dropdown__content" data-target="purchases" class="purchases-menu dropdown__content hidden">
+					<div class="purchases-menu__body">
+						<ol class="purchases-menu__goods">
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/img_goods/136427.jpeg" data-bind="" title="Playstation Network (PSN) 50 регион - USA [Цифровая Версия]">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">Playstation Network (PSN) 50 регион - USA [Цифровая Версия]</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/gallery/7498b5cccd661faaac924e5db0c1fd2d3478f291.jpeg" data-bind="" title="Книга quotЯ - отец: принципы воспитания личностиquot (версия 2.0)">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">Книга quotЯ - отец: принципы воспитания личностиquot (версия 2.0)</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/gallery/5c8b8b8b26506fd98868e3af8f0baa32efde092b.png" data-bind="" title="Гигантский транспорт">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">Гигантский транспорт</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/gallery/3f19351986d028dae59df85914c1478c86c6c2d7.png" data-bind="" title="Мое любимое животное">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">Мое любимое животное</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/img_goods/128994.jpeg" data-bind="" title="психология отношений">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">психология отношений</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/img_goods/128998.jpeg" data-bind="" title="обучение фотошоп">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">обучение фотошоп</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+							<li class="purchases-menu__goods-item order-item">
+								<div class="purchases-item__img">
+									<img src="//seller.pokupo.ru/images/img_goods/128999.jpeg" data-bind="" title="лечебная физкультура">
+								</div>						
+								<div class="purchases-item__name"><span data-bind="">лечебная физкультура</span></div>
+								<a href="javascript:void(0);" class="btn purchases-menu__download-button">Скачать</a>
+							</li>
+						</ol>
+						<a href="javascript:void(0);" data-bind="click: ClickPurchases" class="purchases-menu__purchases-button">показать все мои покупки</a>
+					</div>
+				</div>	
+            </li>
+            <li class="user-menu__item"><a href="javascript:void(0);" data-bind="click: ClickMessages" class="user-menu__bookmarks">Закладки</a></li>
+            <!-- /ko -->
+			<li class="user-menu__item"><a id="js-logout" href="javascript:void(0);" data-bind="click: ClickLogout" class="user-menu__logout">Выйти</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</script>
+<script id="authorizationLinkTmpl" type="text/html">
+  <!-- version 2.0-->
+  <div class="not-logged-in"><a id="js-login" href="/#/login/" title="Войти" data-bind="click: ClickLogin" class="menu-login__login">Войти на сайт</a><a href="javascript:void(0);" title="Закладки" data-bind="click: ClickRegistration" class="user-menu__bookmarks">Закладки</a></div>
+</script>
+

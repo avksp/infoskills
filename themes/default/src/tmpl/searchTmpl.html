@@ -1,0 +1,18 @@
+
+<script id="searchTmpl" type="text/html">
+  <!-- version 1.0 -->
+  <section class="search_click_slide">
+    <input class="btn-search-click hidden" id="search-click" type="checkbox">
+	<label for="search-click">поиск</label>
+    <input class="btn_close-click hidden" id="search-click" type="checkbox">
+	<label for="search-click"></label>  	
+    <div class="search-click-slide-form hidden">
+      <form action="" data-bind="submit: SubmitSearchForm">
+        <div class="search-click-slide-holder">
+          <input type="search" placeholder="Ведите поисковой запрос" data-bind="value: text" class="btn_search__input"/>
+          <button type="submit" data-bind="click: ClickSearchForm" class="btn_search">Найти</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</script>

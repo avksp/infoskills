@@ -1,0 +1,9 @@
+/* Diffrent display layout styles */
+
+@media screen and (max-width: 1808px) {
+	.promoBlocks-1-3,
+	.promoBlocks-2-3   {
+      display: none;
+   }
+   
+}
