@@ -39,6 +39,7 @@
 	<link href="../styles/src/layout_info.css" rel="stylesheet">
 	<link href="../styles/src/layout_disp_info.css" rel="stylesheet">	
 	<link id="theme" href="../themes/default/src/theme_info.css" rel="stylesheet">
+	<link id="theme" href="../themes/default/src/theme_disp_info.css" rel="stylesheet">	
 	<link href="../images/icons/favicon.ico" rel="shortcut icon">
 <!-- <script async="" type="text/javascript" src="./Славный Град_files/share.js"></script><script async="" type="text/javascript" src="./Славный Град_files/pjquery.min.js"></script><link type="text/css" rel="stylesheet" href="./Славный Град_files/main_pkp.css"><link type="text/css" rel="stylesheet" href="./Славный Град_files/theme.css"><link type="text/css" rel="stylesheet" href="./Славный Град_files/theme(1).css"><script async="" type="text/javascript" src="./Славный Град_files/pokupo.components.min.js"></script><script async="" type="text/javascript" src="./Славный Град_files/pokupo.widgets.lib.min.js"></script><script async="" type="text/javascript" src="./Славный Град_files/pokupo.widgets.animate.min.js"></script><script async="" type="text/javascript" src="./Славный Град_files/pokupo.widgets.min.js"></script><style type="text/css"></style><script async="" type="text/javascript" src="./Славный Град_files/ContentViewModel-1.0.min.js"></script></head>-->
 </head>
@@ -48,6 +49,8 @@
     <header class="header_theme">
         <div class="container_theme">
             <div class="menu-main-search">
+				<input class="btn-menu-click-mobile hidden" id="menu-click-mobile" type="checkbox">
+				<label for="menu-click-mobile"></label>			
 				<!-- main-menu -->
 			    <div id="catalogWidgetId">
 					<!-- version 2.0-->
@@ -225,6 +228,8 @@
 			<!-- /logo -->			
 			<!-- user menu and cart -->				
             <div class="menu-login">
+				<input class="btn-menu-login-click hidden" id="menu-login-click" type="checkbox">
+				<label for="menu-login-click"></label>				
 				<div class="not-logged-in">
 					<ul class="menu-login-cart">
 						<li class="user-menu__item">
@@ -613,12 +618,16 @@
 		</div></div>
 	</footer>
 	<!-- /footer -->	
+	<!-- Back to top -->
+	<a href="#" class="back-to-top" title="Наверх">наверх</a>
+	<!-- /Back to top -->	
 </div>
-		<script type="text/javascript" src="https://server.pokupo.ru/dev/server/js/widgets/JSCore-1.3.min.js"></script>
+	<!--	<script type="text/javascript" src="https://server.pokupo.ru/dev/server/js/widgets/JSCore-1.3.min.js"></script> -->
 		<script src="../scripts/libs/floatlabels.js"></script>
 		<script src="../scripts/main.js"></script>
+		<script src="../scripts/custom.js"></script>		
 		<script src="../scripts/libs/chosen.jquery.js"></script>
-		<script src="../scripts/libs/masked-input.js"></script>		
+		<script src="../scripts/libs/masked-input.js"></script>			
 <!--
 		<script src="../scripts/libs/jquery.fancytree-all.js"></script>
 		<script src="../scripts/libs/fotorama.js"></script>

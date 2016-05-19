@@ -113,10 +113,16 @@ input[type="text"]:focus{
 	font-size: 13px;
 }
 
+.header_theme.sticky{
+	border-bottom: 3px solid rgba(0,0,0,0.2);
+}
+
+
 .header_theme a{
 	color: #000;
 	font-size: 13px;	
 }
+
 
 
 .menu-main-search label{
@@ -128,6 +134,35 @@ input[type="text"]:focus{
 .menu-main-search label:focus{
 	color: #0099cc;
 }
+
+.header_theme.sticky .header__cell{
+	background: transparent url("../../../images/logo/logo-s.png") center center no-repeat;
+}
+
+.btn-menu-click-mobile + label{
+	font-weight: bold;
+}
+
+.btn-menu-click-mobile + label:before,
+.btn-menu-click-mobile:indeterminate + label:before{
+	background: transparent url("images/sprites.png") -10px -10px no-repeat;	
+}
+
+.btn-menu-click-mobile + label:hover:before, .btn-menu-click-mobile:indeterminate + label:hover:before,
+.btn-menu-click-mobile + label:focus:before, .btn-menu-click-mobile:indeterminate + label:focus:before{
+	background: transparent url("images/sprites.png") -41px -10px no-repeat;
+}
+
+.btn-menu-click-mobile:checked + label:before{
+	background: transparent url("images/sprites.png") -828px -9px no-repeat;
+}
+
+.btn-menu-click-mobile:checked + label:hover:before,
+.btn-menu-click-mobile:checked + label:focus:before{
+	background: transparent url("images/sprites.png") -780px -9px no-repeat;
+}
+
+
 
 /* --------------- Menu click styles --------------- */
 .btn-menu-click + label{
@@ -173,7 +208,7 @@ input[type="text"]:focus{
 	color: #0099cc;
 }
 
-.menu-click-dropdown ul.menu:before{
+.menu-click-dropdown ul.menu-click-list:before{
 	background: transparent url("images/sprites.png") -934px -10px no-repeat;
 }
 
@@ -1239,6 +1274,16 @@ a.product-info__question-button{
 	text-align: right;
 }
 
+.back-to-top{
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.back-to-top:after{
+	background: transparent url("images/sprites.png") -168px -10px no-repeat;
+}
 
 /* ---------------  --------------- icons ---------------  --------------- */
 
@@ -1502,6 +1547,8 @@ a.product-info__question-button{
 .pass-bl_pkp{ width:11px; height:13px; background-position:-2038px -10px; }
 .change-bl_pkp{ width:17px; height:15px; background-position:-2059px -10px; }
 .ok-blue_pkp{ width:49px; height:40px; background-position:-2086px -10px; }
+.minus_pkp{ width:9px; height:1px; background-position:-2145px -10px; }
+.search-wht_pkp{ width:19px; height:19px; background-position:-2164px -10px; }
 
 
 

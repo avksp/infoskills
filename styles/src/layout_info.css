@@ -18,8 +18,8 @@ img{
 
 .section_theme, .container_theme{
 	margin: 0 auto;
-	padding: 0 4%;
-	position: relative;
+	/*padding: 0 4%;
+	position: relative;*/
 }
 
 .main_theme {
@@ -35,6 +35,13 @@ img{
 .fw{
 	width: 108.7%;
     margin-left: -4.4%;
+	overflow: hidden;
+}
+
+.fw-abs{
+	position: absolute;
+    left: 0;
+	width: 100%;
 }
 
 .clearfix:after{
@@ -86,8 +93,10 @@ img{
 	position: fixed;
 	width: 100%;
 	text-align: center;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
 }
-
 
 .menu-main-search{
 	margin-top: 54px;
@@ -95,12 +104,66 @@ img{
 	text-align:left;
 }
 
+.btn-menu-click-mobile, .btn-menu-click-mobile + label{
+	display: none;
+}
+
+.btn-menu-click-mobile + label:before,
+.btn-menu-click-mobile:indeterminate + label:before{
+	width:21px;
+	height:16px;
+	content: "";
+	display: none;
+	vertical-align: top;
+	-webkit-transform-origin: 50% 50%; 
+	-ms-transform-origin:  50% 50%;
+	 transform-origin:  50% 50%; 	
+	-webkit-animation:rotatel90 ease 0.35s; 
+    -moz-animation:rotatel90 ease 0.35s;
+    animation:rotatel90 ease 0.35s;	
+}
+
+.btn-menu-click-mobile:checked + label:before{
+
+    /* Animation icon menu */
+	-webkit-transform-origin: 50% 50%; 
+	-ms-transform-origin:  50% 50%;
+	 transform-origin:  50% 50%;     
+	-webkit-animation:rotate90 ease 0.35s; 
+    -moz-animation:rotate90 ease 0.35s;
+    animation:rotate90 ease 0.35s;
+}
+
+
 .menu-login{
 	margin-top: 54px;
 	float: right;
 	text-align:left;
 	position: relative;
 }
+
+.header_theme.sticky{
+	height: 62px;
+}
+
+
+.header_theme.sticky .menu-main-search{
+	margin-top: 24px;
+}
+
+.header_theme.sticky .menu-login{
+	margin-top: 24px;
+}
+
+.header_theme.sticky .header__cell{
+	width: 116px;
+	height: 23px;
+}
+
+.header_theme.sticky .header__cell img{
+	display: none;
+}
+
 
 /* ------------- Menu click styles ------------- */
 #catalogWidgetId{
@@ -149,11 +212,15 @@ img{
 	z-index: 100;
 }
 
-.menu-click-dropdown ul.menu{
+.header_theme.sticky .menu-click-dropdown{
+	top: 60px;
+}
+
+.menu-click-dropdown ul.menu-click-list{
 	position: relative;
 }
 
-.menu-click-dropdown ul.menu:before{
+.menu-click-dropdown ul.menu-click-list:before{
 	position: absolute;
 	width:21px;
 	height:11px;
@@ -380,7 +447,17 @@ img{
 	margin: 17px auto 0 auto;
 }
 
+.sticky #shopInfoWidgetId{
+	display: inline-block;
+	width: 116px;
+	height: 23px;
+	margin: 17px auto 0 auto;
+}
 
+
+.btn-menu-login-click, .btn-menu-login-click + label{
+	display: none;
+}
 
 /* ------------- Dropdown cart ------------- */
 
@@ -567,6 +644,10 @@ a#cart_dropdown__trigger:before{
 	margin-right: 15px;
 }
 
+.user-menu__item:last-child{
+	padding-right:0;
+}
+
 /*
 .user-menu__item:first-child{
 	margin-right: 134px;
@@ -694,8 +775,7 @@ p.user-menu__name{
 
 .catalog-slider{
 	height: 330px;
-	margin-top: 20px;
-	position: relative;
+	top: 130px;
 }
 
 .catalog-slider__slide{
@@ -755,6 +835,10 @@ p.user-menu__name{
 	margin-top: 40px;
 }
 
+.with-banner .breadcrumbs_theme{
+	margin-top: 400px;
+}
+
 .breadcrumbs_theme a:not(:first-child){
 	margin-left: 4px;
 }
@@ -802,8 +886,8 @@ p.user-menu__name{
 
 .catalog-banner{
 	height: 300px;
-	position: absolute;
-	top: 1479px;
+	position: relative;
+	top: 30px;
 	left:0;
 	z-index: 20;
 	width: 104.4%;
@@ -942,7 +1026,7 @@ p.user-menu__name{
 
 .catalog-main__item{
 	position: relative;
-	display: block;
+	display: inline-block;
 }
 
 .catalog-main__item.item-b{
@@ -1034,12 +1118,136 @@ p.user-menu__name{
 	overflow: hidden;
 }
 
+.promoBlocks-1{
+	position: relative;
+	height: 1000px;
+}
+
+.catalog-main__item{
+	position: absolute;
+	display: block;
+}
+
+.promoBlocks-1 .catalog-main__item:first-child{
+	top: 0;
+	left: 0;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(2){
+	top: 680px;
+	left: 0;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(3){
+	top: 680px;
+	left: 240px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(4){
+	top: 0;
+	left: 480px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(5){
+	top: 0;
+	left: 960px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(6){
+	top: 340px;
+	left: 480px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(7){
+	top: 340px;
+	left: 720px;
+}	
+
+.promoBlocks-1 .catalog-main__item:nth-child(8){
+	top: 680px;
+	left: 480px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(9){
+	top: 680px;
+	left: 720px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(10){
+	top: 0;
+	left: 1200px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(11){
+	top: 0;
+	left: 1440px;
+}
+
+.promoBlocks-1 .catalog-main__item:nth-child(12){
+	top: 340px;
+	left: 1200px;
+}	
+
+
+.promoBlocks-2{
+	position: relative;
+	height: 660px;
+	margin-top: 60px;
+}
+
+.promoBlocks-2 .catalog-main__item:first-child{
+	top: 0;
+	left: 0;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(2){
+	top: 340px;
+	left: 0;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(3){
+	top: 0;
+	left: 480px;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(4){
+	top: 0;
+	left: 720px;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(5){
+	top: 340px;
+	left: 480px;;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(6){
+	top: 340px;
+	left: 720px;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(7){
+	top: 340px;
+	left: 960px;
+}	
+
+.promoBlocks-2 .catalog-main__item:nth-child(8){
+	top: 0;
+	left: 1200px;
+}
+
+.promoBlocks-2 .catalog-main__item:nth-child(9){
+	top: 340px;
+	left: 1200px;
+}
+
+
+/*
 .promoblock{
 	float: left;
 	overflow: hidden;	
 }
 
-/* ------ Promo block first-top ------ */
+/* ------ Promo block first-top ------ 
 
 .promoBlocks-1-1 .catalog-main__item:nth-child(2){
 	float: left;
@@ -1051,7 +1259,7 @@ p.user-menu__name{
 	margin-top: 20px;
 }
 
-/* ------ Promo block second-top ------ */
+/* ------ Promo block second-top ------ 
 
 .promoBlocks-1-2{
 	margin-left: 20px;
@@ -1075,7 +1283,7 @@ p.user-menu__name{
 	margin-top: 0;
 }
 
-/* ------ Promo block third-top ------ */
+/* ------ Promo block third-top ------ 
 
 .promoBlocks-1-3{
 	margin-left: 20px;
@@ -1094,7 +1302,7 @@ p.user-menu__name{
 	margin-top: 20px;	
 }
 
-/* ------ Promo block first-bottom ------ */
+/* ------ Promo block first-bottom ------
 
 .after_banner{
 	margin-top: 370px;
@@ -1104,7 +1312,7 @@ p.user-menu__name{
 	margin-top: 20px;
 }
 
-/* ------ Promo block second-bottom ------ */
+/* ------ Promo block second-bottom ------
 
 .promoBlocks-2-2{
 	margin-left: 20px;
@@ -1127,12 +1335,12 @@ p.user-menu__name{
 	margin-top: 0;
 }
 
-/* ------ Promo block third-bottom ------ */
+/* ------ Promo block third-bottom ------ 
 
 .promoBlocks-2-3{
 	margin-left: 20px;
 }
-
+*/
 
 /* --------------- Product --------------- */
 
@@ -1872,7 +2080,21 @@ p.user-menu__name{
 }
 
 
+.back-to-top{
+	display: none;
+	position: fixed;
+	bottom: 40px;
+	right: 1%;
+	z-index: 50;
+}
 
+.back-to-top:after{
+	width:24px;
+	height:13px;
+	content: "";
+	display: inline-block;
+	margin-left: 5px;
+}
 
 /* ---------------  --------------- icons ---------------  --------------- */
 

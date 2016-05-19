@@ -30,6 +30,7 @@ time, mark, audio, video {
  -moz-box-sizing: border-box;
  box-sizing: border-box;
  word-wrap: break-word;
+text-overflow: ellipsis; 
 }
 
 article, aside,
