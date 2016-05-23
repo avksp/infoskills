@@ -26,6 +26,7 @@ img{
 	position: relative;
 	min-height: 100%;
 	overflow: hidden;
+	min-width: 300px;
 }
 
 .main_theme > section {
@@ -773,9 +774,13 @@ p.user-menu__name{
 
 /* ------------- Slider ------------- */
 
+#sliderBlockId{
+	margin-top: 90px;	
+}
+
 .catalog-slider{
 	height: 330px;
-	top: 130px;
+	position: relative;
 }
 
 .catalog-slider__slide{
@@ -792,30 +797,35 @@ p.user-menu__name{
 	z-index: 10;
 }
 
+.catalog-slider__nav{
+	position: relative;
+	margin: 0 auto;
+    height: 190px;
+	margin-top: -170px;
+}
+
 .catalog-slider__nav a{
 	position: absolute;
 	display: block;
 	width:24px;
 	height:44px;
 	text-indent:-9999px;
-	top: 40%;
+	top:0;
 	z-index: 20;
 }
 
 .catalog-slider__nav a:first-child{
-	left: 4%;
+	left: 0;
 }
 
 .catalog-slider__nav a:last-child{
-	right: 4%;
+	right: 0;
 }
 
 .catalog-slider__cap{
-	position: absolute;
+	position: relative;
 	height:9px;
-	bottom: 0;
-	left:40%;
-	width: 300px;
+	margin: 0 auto;
 }
 
 .catalog-slider__cap a{
@@ -823,6 +833,7 @@ p.user-menu__name{
 	width:9px;
 	height:9px;
 	text-indent:-9999px;
+	vertical-align: bottom;	
 }
 
 .catalog-slider__cap a:not(:last-child){
@@ -832,12 +843,13 @@ p.user-menu__name{
 /* ------------- Breadcrumbs ------------- */
 
 .breadcrumbs_theme{
-	margin-top: 40px;
+	margin: 40px auto 0 auto;
 }
 
+/*
 .with-banner .breadcrumbs_theme{
-	margin-top: 400px;
-}
+	margin-top: 450px;
+}*/
 
 .breadcrumbs_theme a:not(:first-child){
 	margin-left: 4px;
@@ -864,7 +876,7 @@ p.user-menu__name{
 /* ------------- Menu catalog ---------------- */
 
 .menu-catalog{
-	margin-top: 20px;
+	margin: 20px auto 0 auto;
 }
 
 .menu-catalog .menu__item{
@@ -887,11 +899,8 @@ p.user-menu__name{
 .catalog-banner{
 	height: 300px;
 	position: relative;
-	top: 30px;
-	left:0;
+	margin-top: 30px;
 	z-index: 20;
-	width: 104.4%;
-	
 }
 
 .catalog-banner__slide{
@@ -915,13 +924,8 @@ p.user-menu__name{
 	width: 170px;
 	margin-bottom: 70px;
 	text-align: left;
-	margin-left: 70px;
+	margin-right: 70px;
 	vertical-align: top;
-}
-
-.catalog-item:first-child,
-.catalog-item:nth-child(5n+6){
-	margin-left: 0;
 }
 
 .catalog-item__img{
@@ -1020,7 +1024,7 @@ p.user-menu__name{
 /* --------- Promo block main catalog ---------------- */
 
 .catalog-main{
-	margin-top: 20px;
+	margin: 20px auto 0 auto;
 	position: relative;	
 }
 
@@ -1048,6 +1052,10 @@ p.user-menu__name{
 	position: absolute;
 	top: 20px;
 	right: 30px;
+}
+
+.catalog-main__item .catalog-item__cat{
+	display: none;
 }
 
 .catalog-main__item .catalog-item__img{
@@ -1192,7 +1200,7 @@ p.user-menu__name{
 .promoBlocks-2{
 	position: relative;
 	height: 660px;
-	margin-top: 60px;
+	margin-top: 10px;
 }
 
 .promoBlocks-2 .catalog-main__item:first-child{
@@ -1362,6 +1370,10 @@ p.user-menu__name{
 	margin-right: 20px;	
 }
 
+.product-info__img-mob{
+	display: none;
+}
+
 .product-info__info{
 	display: inline-block;
 	height: 320px;
@@ -1431,6 +1443,11 @@ p.user-menu__name{
 	right: 4%;
 	z-index: 10;
 }
+
+.product-sell.sticky {
+    top: 95px;
+}
+
 
 .product-sell__sell{
 	padding: 21px 40px;
@@ -1505,6 +1522,10 @@ p.user-menu__name{
 	vertical-align: middle;
 }
 
+.product-seller{
+	display: none;
+}
+
 /* ------ Product description ------ */
 
 .product-desc{
@@ -1560,6 +1581,10 @@ p.user-menu__name{
 
 .product-rec .catalog-item{
 	margin-bottom: 50px;
+}
+
+.product-rec .catalog-item:last-child {
+    margin-right: 0;
 }
 
 /* ------ Product reviews ------ */
@@ -2052,7 +2077,7 @@ p.user-menu__name{
 
 .footer_sm-form-holder input.btn_subscr__input{
 	height: 38px;
-	width: 168px;
+	width: 165px;
 	padding: 5px;
 	display: inline-block;
  -webkit-box-sizing: border-box;

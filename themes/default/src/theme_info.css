@@ -669,7 +669,7 @@ a.purchases-menu__purchases-button:focus{
 }
 
 .catalog-item__bookmarks-button{
-	color: #00c4e0;
+	color: #0099cc;
 	font-size: 13px;
 	text-decoration: underline;
 }
@@ -680,6 +680,18 @@ a.purchases-menu__purchases-button:focus{
 
 
 /* --------------- Promo block main catalog --------------- */
+
+.catalog-main__item .catalog-item__cat{
+	text-align: center;
+}
+
+.catalog-main__item .catalog-item__cat a{
+	color: #000;
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
 .catalog-main__item .catalog-item__info{
 	background: rgba(0,0,0,0.8);
 }
@@ -1248,7 +1260,8 @@ a.product-info__question-button{
 
 /* --------------- Footer social links and subscribe form --------------- */
 
-.footer_sm-form span{
+.footer_sm-form span,
+.footer_sm-form label{
 	color: #000;
 	font-size: 13px;
 	font-weight: bold;
@@ -1265,7 +1278,7 @@ a.product-info__question-button{
 
 .footer_sm-form-holder button.btn_subscr{
 	border: 0px;
-	background: transparent url("images/sprites.png") -1119px -1px no-repeat;
+	background: #fff url("images/sprites.png") -1119px -1px no-repeat;
 	border-left: 1px solid #d0d4d8;
 }
 
@@ -1316,26 +1329,50 @@ a.product-info__question-button{
 }
 
 .i-vk{
+	background: transparent url("images/sprites.png") -2360px -10px no-repeat;	
+}
+
+.i-vk:hover, .i-vk:focus{
 	background: transparent url("images/sprites.png") -749px -10px no-repeat;	
 }
 
 .i-fb{
+	background: transparent url("images/sprites.png") -2341px -10px no-repeat;	
+}
+
+.i-fb:hover, .i-fb:focus{
 	background: transparent url("images/sprites.png") -730px -10px no-repeat;	
 }
 
 .i-tw{
+	background: transparent url("images/sprites.png") -2306px -10px no-repeat;	
+}
+
+.i-tw:hover, .i-tw:focus{
 	background: transparent url("images/sprites.png") -695px -10px no-repeat;	
 }
 
 .i-lj{
+	background: transparent url("images/sprites.png") -2277px -10px no-repeat;	
+}
+
+.i-lj:hover, .i-lj:focus{
 	background: transparent url("images/sprites.png") -666px -10px no-repeat;	
 }
 
 .i-hb{
+	background: transparent url("images/sprites.png") -2251px -10px no-repeat;	
+}
+
+.i-hb:hover, .i-hb:focus{
 	background: transparent url("images/sprites.png") -640px -10px no-repeat;	
 }
 
 .i-gp{
+	background: transparent url("images/sprites.png") -2215px -10px no-repeat;	
+}
+
+.i-gp:hover, .i-gp:focus{
 	background: transparent url("images/sprites.png") -604px -10px no-repeat;	
 }
 
@@ -1549,6 +1586,13 @@ a.product-info__question-button{
 .ok-blue_pkp{ width:49px; height:40px; background-position:-2086px -10px; }
 .minus_pkp{ width:9px; height:1px; background-position:-2145px -10px; }
 .search-wht_pkp{ width:19px; height:19px; background-position:-2164px -10px; }
+.bookmark-blueb_pkp{ width:12px; height:16px; background-position:-2193px -10px; }
+.gplus-gr_pkp{ width:26px; height:18px; background-position:-2215px -10px; }
+.hb-gr_pkp{ width:16px; height:20px; background-position:-2251px -10px; }
+.lj-gr_pkp{ width:19px; height:21px; background-position:-2277px -10px; }
+.tw-gr_pkp{ width:25px; height:18px; background-position:-2306px -10px; }
+.fb-gr_pkp{ width:9px; height:20px; background-position:-2341px -10px; }
+.vk-gr_pkp{ width:25px; height:15px; background-position:-2360px -10px; }
 
 
 
