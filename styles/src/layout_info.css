@@ -30,7 +30,7 @@ img{
 }
 
 .main_theme > section {
-	padding: 40px 0;
+	/*padding: 40px 0;*/
 }
 
 .fw{
@@ -775,7 +775,7 @@ p.user-menu__name{
 /* ------------- Slider ------------- */
 
 #sliderBlockId{
-	margin-top: 90px;	
+	margin-top: 20px;	
 }
 
 .catalog-slider{
@@ -1784,7 +1784,7 @@ p.user-menu__name{
 	display: table-cell;
 	vertical-align: middle;
 	text-align: left;
-	padding: 20px 0;
+	padding: 20px 5px 20px 0;
 }
 
 .cart-item__img{
@@ -2365,14 +2365,15 @@ p.user-menu__name{
 }
 
 .popup {
-    top: 20%;
-	left: 37%;
+	top: 20%;
+  /*	left: 37%;*/
     width: 320px;
     z-index: 1000;
     position: relative;
     max-height: 450px;
     overflow: auto;
 	padding: 60px 40px 40px 40px;
+	margin: 0 auto 0 auto;
 }
 
 .popup-head{
